@@ -1,0 +1,22 @@
+{
+  "name": "makea-readme",
+  "version": "1.0.0",
+  "description": "takes in user input to create a professional readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilipHuang2/MakeA-README.git"
+  },
+  "author": "Philip Huang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhilipHuang2/MakeA-README/issues"
+  },
+  "homepage": "https://github.com/PhilipHuang2/MakeA-README#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  }
+}
