@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
 inquirer
   .prompt([
     {
@@ -9,4 +10,8 @@ inquirer
   .then(answers => {
     console.info('Answer:', answers.faveReptile);
   });
-console.log('tests');
+
+// write a example README.md with template literals 
+fs.writeFile("example.md", "test", (err)=> {
+    if (err) return console.log(err);
+});
