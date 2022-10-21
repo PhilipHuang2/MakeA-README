@@ -1,30 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const doc = import('./template')
-const doc = 
-`# Title
+const { create } = require('domain');
 
-# Description
-
-# Table of Contents
-- [Installation](#installation---)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
-# Installation
-
-# Usage
-
-# License
-
-# Contributing
-
-
-# Tests
-
-# Questions`
 inquirer
   .prompt([
     {
@@ -55,7 +32,7 @@ inquirer
       type: 'list',
       message: "What license are you using?",
       name: 'license',
-      choices: ['Apache 2.0', 'Boost', 'BSD 3', 'Creative Commons', 'Eclipse', 'GNU GPL v3', 'The Hippocratic License 2.1', 'IBM 1.0', 'ISC', 'MIT', 'Mozilla', 'Open Data Commons', 'Perl' ]
+      choices: ['Apache 2.0', 'Boost', 'BSD 3', 'Creative Commons', 'Eclipse', 'GNU GPL v3', 'The Hippocratic 2.1', 'IBM 1.0', 'ISC', 'MIT', 'Mozilla', 'Open Data Commons', 'Perl' ]
     },
     {
       name: 'username',
@@ -69,10 +46,57 @@ inquirer
     },
   ])
   .then(answers => {
-    console.info(answers);
+    let doc = createDoc(answers);
+
     fs.writeFile("example.md", doc, (err)=> {
       if (err) return console.log(err);
   });
   });
 
 // write a example README.md with template literals 
+
+
+var createDoc = ({title,description, installation, usage, contribution, tests, username, email, license}) => {
+  return doc = 
+`# ${title}
+
+# Description
+
+${description}
+
+# Table of Contents
+- [Installation](#installation---)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+# Installation
+
+${installation}
+
+# Usage
+
+${usage}
+
+# License
+
+This project is covered under the ${license} License.
+
+# Contributing
+
+${contribution}
+
+# Tests
+
+${tests}
+
+# Questions
+
+Want to check out more of my work?  Check me out at my github [profile](https://github.com/${username}).
+
+Have any questions?
+
+Feel free to email me at ${email}.
+`;
+}
