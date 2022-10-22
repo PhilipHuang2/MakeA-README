@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { create } = require('domain');
+const template = require("./template")
 
 inquirer
   .prompt([
@@ -46,7 +46,7 @@ inquirer
     },
   ])
   .then(answers => {
-    let doc = createDoc(answers);
+    let doc = template.createDoc(answers);
 
     fs.writeFile("example.md", doc, (err)=> {
       if (err) return console.log(err);
@@ -54,49 +54,3 @@ inquirer
   });
 
 // write a example README.md with template literals 
-
-
-var createDoc = ({title,description, installation, usage, contribution, tests, username, email, license}) => {
-  return doc = 
-`# ${title}
-
-# Description
-
-${description}
-
-# Table of Contents
-- [Installation](#installation---)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
-# Installation
-
-${installation}
-
-# Usage
-
-${usage}
-
-# License
-
-This project is covered under the ${license} License.
-
-# Contributing
-
-${contribution}
-
-# Tests
-
-${tests}
-
-# Questions
-
-Want to check out more of my work?  Check me out at my github [profile](https://github.com/${username}).
-
-Have any questions?
-
-Feel free to email me at ${email}.
-`;
-}
