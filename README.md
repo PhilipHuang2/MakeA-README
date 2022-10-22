@@ -31,7 +31,7 @@ I am making this README generator for 2 reasons.  Read ME generator data are all
 
 # Example 
 
-![example](https://drive.google.com/file/d/1mjb_MIt2GmYPmC9usFtimceP8c-DIRVc/view)
+![example](./Resources/README%20Generator.mov)
 
 # License
 
