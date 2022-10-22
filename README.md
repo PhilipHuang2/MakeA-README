@@ -9,6 +9,14 @@ Taking a step back from creating a [Allergy Website](https://github.com/duffylau
 I am making this README generator for 2 reasons.  Read ME generator data are all user generated so I don't have to deal with data structures and all that for now.  Secondly, I am getting kinda of sick with writing these READMEs all the time.  It feels like most of the time I am a programmer, writing out code, building up HTML skeleton and the other time, I feel like a article writer, and it turns out that while I can program for a bit, my hands start hurting while typing out this read me. Hopefully this makes me do less work.    
 
 
+# Table of Contents
+  
+- [Installation](#installation---)
+- [Usage](#usage)
+- [Example](#example)
+- [License](#license)
+- [Questions](#questions)
+
 # Installation
 
 1. Clone the Repository down to your terminal
