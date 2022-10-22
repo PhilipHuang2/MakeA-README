@@ -1,31 +1,36 @@
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # MakeA-README
-a command line application that creates a read me automatically
+Use the command line to create a README automatically 
+
+# Description
+
+Taking a step back from creating a [Allergy Website](https://github.com/duffylaura/Particle-Problems) with [Duffy Laura](https://github.com/duffylaura), [Nichole Guan](https://github.com/ncguan), [Mai Moua](https://github.com/SkyWalkerMM26) (Check them out, they are great people!).   I want to work on something less visual.  I already know Python and Java so working with those languages seems boring.  Node JS serves as an interesting bridge between Javascript and my knowledge of backend programming languages.  Node js serves as a well of extending Javascript and writing some backend stuff with it.  I am still not too sure about why it actually does but it makes it so that I don't have to use another language for the backend and thats good enough for me.  
+
+I am making this README generator for 2 reasons.  Read ME generator data are all user generated so I don't have to deal with data structures and all that for now.  Secondly, I am getting kinda of sick with writing these READMEs all the time.  It feels like most of the time I am a programmer, writing out code, building up HTML skeleton and the other time, I feel like a article writer, and it turns out that while I can program for a bit, my hands start hurting while typing out this read me. Hopefully this makes me do less work.    
 
 
-# User Story
+# Installation
 
-```md
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
-```
+1. Clone the Repository down to your terminal
+2. go to the folder location
+3. run NPM Install
 
-# Acceptance Criteria
+# Usage
 
-```md
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
-```
+1. run node index.js
+2. answer the questions
+3. relabel example.md to README.md
+
+# License
+
+This project is covered under the MIT License.
+
+Additional information can be obtained in the About Section.
+
+# Questions
+  
+Want to check out more of my work?  Check me out at my github [profile](https://github.com/PhilipHuang2).
+  
+Have any questions?
+  
+Feel free to email me at Philiphuang2@gmail.com.

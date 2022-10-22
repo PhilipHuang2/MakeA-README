@@ -1,3 +1,4 @@
 .VS_Code
-node_modules
+.DS_Store
+node_modules/
 example.md

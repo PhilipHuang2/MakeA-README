@@ -44,49 +44,49 @@ const getBadge = license => {
 }
 
 module.exports.createDoc = ({title,description, installation, usage, contribution, tests, username, email, license}) => {
-    return doc = 
-  `${getBadge(license)}
-  # ${title}
+return doc = 
+`${getBadge(license)}
+# ${title}
   
-  # Description
+# Description
   
-  ${description}
+${description}
   
-  # Table of Contents
-  - [Installation](#installation---)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  # Installation
+# Table of Contents
   
-  ${installation}
-  
-  # Usage
-  
-  ${usage}
-  
-  # License
-  
-  This project is covered under the ${license} License.
-  
-  # Contributing
-  
-  ${contribution}
-  
-  # Tests
-  
-  ${tests}
-  
-  # Questions
-  
-  Want to check out more of my work?  Check me out at my github [profile](https://github.com/${username}).
-  
-  Have any questions?
-  
-  Feel free to email me at ${email}.
-  `;
-  }
+- [Installation](#installation---)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+# Installation
+
+${installation}
+
+# Usage
+
+${usage}
+
+# License
+
+This project is covered under the ${license} License.
+
+# Contributing
+
+${contribution}
+
+# Tests
+
+${tests}
+
+# Questions
+
+Want to check out more of my work?  Check me out at my github [profile](https://github.com/${username}).
+
+Have any questions?
+
+Feel free to email me at ${email}.`;
+}
 
 
