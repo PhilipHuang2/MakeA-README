@@ -33,6 +33,10 @@ I am making this README generator for 2 reasons.  Read ME generator data are all
 
 ![example](https://drive.google.com/file/d/1mjb_MIt2GmYPmC9usFtimceP8c-DIRVc/view)
 
+
+https://user-images.githubusercontent.com/5439889/197324852-74c7040e-052e-424b-8bbe-fde3cdf51a62.mov
+
+
 # License
 
 This project is covered under the MIT License.
